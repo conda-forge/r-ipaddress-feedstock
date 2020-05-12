@@ -33,18 +33,20 @@ requirements:
   host:
     - r-base
     - r-asioheaders
+    - r-bh
     - r-rcpp
     - r-blob >=1.2.0
     - r-rlang >=0.4.0
-    - r-vctrs >=0.2.2
+    - r-vctrs >=0.3.0
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-asioheaders
+    - r-bh
     - r-rcpp
     - r-blob >=1.2.0
     - r-rlang >=0.4.0
-    - r-vctrs >=0.2.2
+    - r-vctrs >=0.3.0
 
 test:
   commands:
