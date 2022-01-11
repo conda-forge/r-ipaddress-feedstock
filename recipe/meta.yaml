@@ -1,4 +1,4 @@
-{% set version = "0.5.3" %}
+{% set version = "0.5.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ipaddress_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ipaddress/ipaddress_{{ version }}.tar.gz
-  sha256: 2619a53ce004371ef23c3897a16ee0f06b903a1a7489a52699ba527857e7d04b
+  sha256: 9b9d47257dc61b2a65c47d3fa43e55e8eebddc7ba9fed18fb4ed473857f344e6
 
 build:
   merge_build_host: true  # [win]
