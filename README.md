@@ -3,22 +3,28 @@ About r-ipaddress-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ipaddress-feedstock/blob/main/LICENSE.txt)
 
+
 About r-ipaddress
 -----------------
 
-Home: https://davidchall.github.io/ipaddress, https://github.com/davidchall/ipaddress
+Home: https://davidchall.github.io/ipaddress
 
 Package license: MIT
 
 Summary: Classes and functions for working with IP (Internet Protocol) addresses and networks, inspired by the Python 'ipaddress' module.  Offers full support for both IPv4 and IPv6 (Internet Protocol versions 4 and 6) address spaces. It is specifically designed to work well with the 'tidyverse'.
+
+Development: https://github.com/davidchall/ipaddress
+
 About r-ipaddress
 -----------------
 
-Home: https://davidchall.github.io/ipaddress, https://github.com/davidchall/ipaddress
+Home: https://davidchall.github.io/ipaddress
 
 Package license: MIT
 
 Summary: Classes and functions for working with IP (Internet Protocol) addresses and networks, inspired by the Python 'ipaddress' module.  Offers full support for both IPv4 and IPv6 (Internet Protocol versions 4 and 6) address spaces. It is specifically designed to work well with the 'tidyverse'.
+
+Development: https://github.com/davidchall/ipaddress
 
 Current build status
 ====================
