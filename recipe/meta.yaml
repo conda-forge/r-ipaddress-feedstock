@@ -36,6 +36,7 @@ requirements:
     - r-rcpp
     - r-cli >=3.4.0
     - r-rlang >=1.0.3
+    - r-vctrs
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
@@ -43,6 +44,7 @@ requirements:
     - r-rcpp
     - r-cli >=3.4.0
     - r-rlang >=1.0.3
+    - r-vctrs
 
 test:
   commands:
