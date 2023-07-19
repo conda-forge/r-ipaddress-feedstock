@@ -14,17 +14,17 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - {{ compiler('c') }}              # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
-    - {{ compiler('cxx') }}            # [not win]
-    - {{ compiler('m2w64_cxx') }}      # [win]
+    - {{ compiler('c') }}          # [not win]
+    - {{ compiler('m2w64_c') }}    # [win]
+    - {{ compiler('cxx') }}        # [not win]
+    - {{ compiler('m2w64_cxx') }}  # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
@@ -33,20 +33,18 @@ requirements:
   host:
     - r-base
     - r-asioheaders
-    - r-bh
     - r-rcpp
-    - r-blob >=1.2.0
-    - r-rlang >=0.4.0
-    - r-vctrs >=0.3.0
+    - r-cli >=3.4.0
+    - r-rlang >=1.0.3
+    - r-vctrs
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-asioheaders
-    - r-bh
     - r-rcpp
-    - r-blob >=1.2.0
-    - r-rlang >=0.4.0
-    - r-vctrs >=0.3.0
+    - r-cli >=3.4.0
+    - r-rlang >=1.0.3
+    - r-vctrs
 
 test:
   commands:
@@ -54,7 +52,8 @@ test:
     - "\"%R%\" -e \"library('ipaddress')\""  # [win]
 
 about:
-  home: https://davidchall.github.io/ipaddress, https://github.com/davidchall/ipaddress
+  home: https://davidchall.github.io/ipaddress
+  dev_url: https://github.com/davidchall/ipaddress
   license: MIT
   summary: Classes and functions for working with IP (Internet Protocol) addresses and networks, inspired by the Python 'ipaddress' module.  Offers full support for both IPv4 and IPv6 (Internet Protocol versions 4 and 6) address spaces. It is specifically designed to work well with the 'tidyverse'.
   license_family: MIT
@@ -66,27 +65,3 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - halldc
-
-# Package: ipaddress
-# Title: Tidy IP Addresses
-# Version: 0.2.0
-# Authors@R: person(given = "David", family = "Hall", role = c("aut", "cre"), email = "david.hall.physics@gmail.com", comment = c(ORCID = "0000-0002-2193-0480"))
-# Description: Classes and functions for working with IP (Internet Protocol) addresses and networks, inspired by the Python 'ipaddress' module.  Offers full support for both IPv4 and IPv6 (Internet Protocol versions 4 and 6) address spaces. It is specifically designed to work well with the 'tidyverse'.
-# License: MIT + file LICENSE
-# URL: https://davidchall.github.io/ipaddress, https://github.com/davidchall/ipaddress
-# BugReports: https://github.com/davidchall/ipaddress/issues
-# Depends: R (>= 3.2.0)
-# Imports: blob (>= 1.2.0), methods, Rcpp, rlang (>= 0.4.0), vctrs (>= 0.2.2)
-# Suggests: knitr, rmarkdown, testthat (>= 2.1.0)
-# LinkingTo: AsioHeaders, Rcpp
-# VignetteBuilder: knitr
-# Encoding: UTF-8
-# LazyData: true
-# RoxygenNote: 7.1.0
-# SystemRequirements: C++11
-# NeedsCompilation: yes
-# Packaged: 2020-03-25 17:06:17 UTC; david
-# Author: David Hall [aut, cre] (<https://orcid.org/0000-0002-2193-0480>)
-# Maintainer: David Hall <david.hall.physics@gmail.com>
-# Repository: CRAN
-# Date/Publication: 2020-03-25 17:30:02 UTC

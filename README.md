@@ -3,22 +3,28 @@ About r-ipaddress-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ipaddress-feedstock/blob/main/LICENSE.txt)
 
+
 About r-ipaddress
 -----------------
 
-Home: https://davidchall.github.io/ipaddress, https://github.com/davidchall/ipaddress
+Home: https://davidchall.github.io/ipaddress
 
 Package license: MIT
 
 Summary: Classes and functions for working with IP (Internet Protocol) addresses and networks, inspired by the Python 'ipaddress' module.  Offers full support for both IPv4 and IPv6 (Internet Protocol versions 4 and 6) address spaces. It is specifically designed to work well with the 'tidyverse'.
+
+Development: https://github.com/davidchall/ipaddress
+
 About r-ipaddress
 -----------------
 
-Home: https://davidchall.github.io/ipaddress, https://github.com/davidchall/ipaddress
+Home: https://davidchall.github.io/ipaddress
 
 Package license: MIT
 
 Summary: Classes and functions for working with IP (Internet Protocol) addresses and networks, inspired by the Python 'ipaddress' module.  Offers full support for both IPv4 and IPv6 (Internet Protocol versions 4 and 6) address spaces. It is specifically designed to work well with the 'tidyverse'.
+
+Development: https://github.com/davidchall/ipaddress
 
 Current build status
 ====================
@@ -38,13 +44,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9571&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ipaddress-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9571&branchName=main">
@@ -52,10 +51,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.1</td>
+              <td>linux_64_r_base4.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9571&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ipaddress-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ipaddress-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -63,6 +62,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9571&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ipaddress-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9571&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ipaddress-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
