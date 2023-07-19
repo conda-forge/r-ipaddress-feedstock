@@ -1,7 +1,9 @@
 #!/bin/bash
 export DISABLE_AUTOBREW=1
 
-## tolerate older osx sdk
-export PKG_CPPFLAGS="-D_LIBCPP_DISABLE_AVAILABILITY"
+if [[ $target_platform =~ .*osx.* ]]; then
+  ## stick with C++14
+  echo "CXX_STD=CXX14" >> src/Makevars
+fi
 
 ${R} CMD INSTALL --build . ${R_ARGS}
